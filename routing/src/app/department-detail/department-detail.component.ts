@@ -34,9 +34,8 @@ export class DepartmentDetailComponent implements OnInit {
 
   gotoDepartments() {
     const selectedID = this.departmentID ? this.departmentID : null;
-    this.router.navigate(['/departments', {
-      lastVisitedID: selectedID
-    }]);
+    // this.router.navigate(['/departments', { lastVisitedID: selectedID }]);
+    this.router.navigate(['../', { lastVisitedID: selectedID }], { relativeTo: this.route });
   }
 
 }

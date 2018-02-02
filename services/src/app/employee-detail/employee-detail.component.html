@@ -1,5 +1,7 @@
 <h2>Employee Details</h2>
 
+{{ errorMessage }}
+
 <ul *ngFor="let employee of employees">
   <li>
     {{ employee.id }}. {{ employee.name }} ({{ employee.age }})

@@ -1,3 +1,9 @@
-<p>
-  ng-if works!
-</p>
+<div *ngIf="displayName; then thenBlock; else elseBlock"></div>
+
+<ng-template #thenBlock>
+  <h2>Amruth Pillai</h2>
+</ng-template>
+
+<ng-template #elseBlock>
+  <h2>Hidden</h2>
+</ng-template>
